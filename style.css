@@ -1,0 +1,118 @@
+ 
+        body{    
+                font-family: montserrat;
+                    }
+
+        h1{  
+                text-align:center;
+                color:#7f835f;
+                margin: 80px auto 80px;
+                }
+   
+         .hi-slide {    position: absolute; 
+                        width: 100%; 
+                        margin: 0px auto 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+
+  /* TO LEFT NAVIGATION  */
+
+            .navigation {
+                    cursor: pointer;          
+                    transition: all 0.6s;
+                    z-index: 9;
+                    position: relative;
+                    top: 4%;
+                    }
+
+            .hi-prev{
+                    position: relative;
+                    left: 160px;
+                    background: red;
+                    }
+
+            .hi-next{
+                    position: relative;
+                    right: -150px;
+                    }
+
+            .hi-prev img{
+                        width:50px;
+                        height: 50px;
+                        position: absolute;
+                        left: -100px
+                    }
+           
+             
+.navigation .hi-next img{
+            width:50px;
+            height: -50px;
+            position: absolute;
+            right: -780px;
+            transform: rotate(180deg);
+            }
+
+            
+    /* TO SLIDER IMAGE */
+            
+            .hi-slide > ul
+                    { 
+                        list-style: none; 
+                        position: relative;
+                        width: 1000px; 
+                        height:200px; 
+                        padding: 0;
+            }
+            
+            
+     .hi-slide > ul > li {
+                overflow: hidden; 
+                position: absolute; 
+                z-index: 0; 
+                left: 377px;
+                top: 146px; 
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.37);
+                width: 0; 
+                height: 0; 
+                margin: 0; 
+                padding: 0;            
+                background-color: #333; 
+                cursor: pointer;
+                border-radius: 35px;
+                background-repeat: no-repeat;
+                background-origin: border-box ;
+                background-position: center;
+                background-size: contain;
+                background-clip: content-box; }
+            
+            
+         .hi-slide > ul > li > img { 
+                            width: 100%; 
+                            height: 100%;
+                        }
+
+            .nav-locater{
+                        width: 100%;
+                        height: 25px;
+                        position: absolute;
+                        bottom: 0px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                         }
+            .locater{
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: rgb(175, 175, 175);
+                    margin-left: 10px;
+                    cursor: pointer;
+                    }
+
+            .locater:hover{
+                            transform: scale(1.4);
+                            background: rgb(107, 107, 107);
+                           }
